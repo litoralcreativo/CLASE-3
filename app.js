@@ -21,7 +21,6 @@ function wrap(index) {
 function removeItem() {
   const container = document.getElementById("container");
   const child = container.children[0];
-  console.log(child);
   container.removeChild(child);
 }
 

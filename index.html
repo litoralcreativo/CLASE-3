@@ -36,6 +36,22 @@
         onclick="chengeDirection('column')"
       />
       <label for="column">Column</label><br />
+      <input
+        type="radio"
+        id="directionRowReverse"
+        name="direction"
+        value="rowRev"
+        onclick="chengeDirection('row-reverse')"
+      />
+      <label for="rowRev">Row-reverse</label><br />
+      <input
+        type="radio"
+        id="directionColumnRev"
+        name="direction"
+        value="columnRev"
+        onclick="chengeDirection('column-reverse')"
+      />
+      <label for="columnRev">Column-reverse</label><br />
     </div>
     <div class="flex-control">
       <h4>Justify Content</h4>
@@ -120,6 +136,7 @@
     <div class="flex-control">
       <h4>Wrap</h4>
       <input
+        checked="checked"
         type="radio"
         id="wrapTrue"
         name="wrap"
@@ -136,6 +153,14 @@
         onclick="wrap('nowrap')"
       />
       <label for="column">No-wrap</label><br />
+      <input
+        type="radio"
+        id="wrapRev"
+        name="wrap"
+        value="wrapReverse"
+        onclick="wrap('wrap-reverse')"
+      />
+      <label for="wrapReverse">Wrap-reverse</label><br />
     </div>
     <div class="flex-control">
       <button onclick="addItem()">Agregar Item</button>

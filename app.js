@@ -19,8 +19,10 @@ function wrap(index) {
 }
 
 function removeItem() {
-  let container = document.getElementById("container");
-  container.removeChild(container.firstChild);
+  const container = document.getElementById("container");
+  const child = container.children[0];
+  console.log(child);
+  container.removeChild(child);
 }
 
 function addItem() {

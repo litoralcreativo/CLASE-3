@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clase 3</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+    <div class="flex-control">
+      <h4>Flex direction</h4>
+      <input
+        type="radio"
+        id="directionRow"
+        name="direction"
+        value="row"
+        onclick="chengeDirection('row')"
+      />
+      <label for="row">Row</label><br />
+      <input
+        type="radio"
+        id="directionColumn"
+        name="direction"
+        value="column"
+        onclick="chengeDirection('column')"
+      />
+      <label for="column">Column</label><br />
+    </div>
+    <div class="flex-control">
+      <h4>Justify Content</h4>
+      <input
+        type="radio"
+        id="justStart"
+        name="justify"
+        value="start"
+        onclick="changeJustify('flex-start')"
+      />
+      <label for="start">Start</label><br />
+      <input
+        type="radio"
+        id="justCenter"
+        name="justify"
+        value="center"
+        onclick="changeJustify('center')"
+      />
+      <label for="center">Center</label><br />
+      <input
+        type="radio"
+        id="justEnd"
+        name="justify"
+        value="end"
+        onclick="changeJustify('flex-end')"
+      />
+      <label for="end">End</label><br />
+    </div>
+    <div class="flex-control">
+      <h4>Align Items</h4>
+      <input
+        type="radio"
+        id="aliStart"
+        name="align"
+        value="start"
+        onclick="changeAlign('flex-start')"
+      />
+      <label for="start">Start</label><br />
+      <input
+        type="radio"
+        id="aliCenter"
+        name="align"
+        value="center"
+        onclick="changeAlign('center')"
+      />
+      <label for="center">Center</label><br />
+      <input
+        type="radio"
+        id="aliEnd"
+        name="align"
+        value="end"
+        onclick="changeAlign('flex-end')"
+      />
+      <label for="end">Start</label><br />
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
